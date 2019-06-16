@@ -1,0 +1,86 @@
+{%extends 'base.html'%}
+{%block content%}
+{%load static %}
+
+<div class="container-fluid">
+
+        <section id="welcome" class="tm-content-box tm-banner margin-b-10">
+            <div class="tm-banner-inner">
+                <h1 class="tm-banner-title"><a href="{%url 'home'%}">Movies Adda</a></h1>                        
+            </div>                    
+        </section>
+
+        <div class="tm-body">
+            <div class="tm-sidebar">
+                <nav class="tm-main-nav">
+                    <ul class="tm-main-nav-ul">
+                        <li class="tm-nav-item"><a href="{%url 'home'%}" class="tm-nav-item-link tm-button">
+                            <i class="fa fa-smile-o tm-nav-fa"></i>Home</a>
+                        </li>
+                    </ul>
+                </nav>
+             </div>
+            
+             <div id="gallery" class="tm-content-box">                        
+                    <div class="grid tm-gallery">
+                        <figure class="effect-bubba">
+                            <img src="{% static 'img/img-11-08.jpg'%}" alt="Image 8" class="img-fluid">
+                            <figcaption>
+                                <h2>hollywood <span>Movies</span></h2>
+                                <p>Fusce faucibus metus in augue</p>
+                                <a href="{% static 'img/img-11-08.jpg'%}">View more</a>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="effect-bubba">
+                            <img src="{% static 'img/img-11-07.jpg'%}" alt="Image 7" class="img-fluid">
+                            <figcaption>
+                                <h2>Bollywood <span>Movies</span></h2>
+                                <p>Sed ut ipsum eu purus ullamcorper</p>
+                                <a href="{% static 'img/img-11-07.jpg'%}">View more</a>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="effect-bubba">
+                            <img src="{% static 'img/img-11-05.jpg'%}" alt="Image 5" class="img-fluid">
+                            <figcaption>
+                                <h2>Tollywood <span>Higher</span></h2>
+                                <p>Morbi fermentum eget libero sed</p>
+                                <a href="{% static 'img/img-11-05.jpg'%}">View more</a>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="effect-bubba">
+                            <img src="{% static 'img/img-11-03.jpg'%}" alt="Image 3" class="img-fluid">
+                            <figcaption>
+                                <h2>Cartton <span>Park</span></h2>
+                                <p>Aenean rutrum enim a tellus suscipit</p>
+                                <a href="{% static 'img/img-11-03.jpg'%}">View more</a>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="effect-bubba">
+                            <img src="{% static 'img/img-11-02.jpg'%}" alt="Image 2" class="img-fluid">
+                            <figcaption>
+                                <h2>Bhojpuri <span>Mountain</span></h2>
+                                <p>Curabitur a ipsum eget eros sodales</p>
+                                <a href="{% static 'img/img-11-02.jpg'%}">View more</a>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="effect-bubba">
+                            <img src="{% static 'img/img-11-04.jpg'%}" alt="Image 4" class="img-fluid">
+                            <figcaption>
+                                <h2>Web <span>Series</span></h2>
+                                <p>Duis eget tortor et mauris tempus</p>
+                                <a href="{% static 'img/img-11-04.jpg'%}">View more</a>
+                            </figcaption>
+                        </figure>                                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}
